@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# modules
+/node_modules/
+
+# editor
+.idea/*
+.vscode/*
+
+# lock
+yarn.lock
+package-lock.json
+
+# error Files
+yarn-error.log
