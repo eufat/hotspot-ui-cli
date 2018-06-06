@@ -22,15 +22,15 @@ const BUTTON_SELECTOR = '#fm1 > div.bottom.clearfix > div > button';
   });
   const page = await browser.newPage();
   await page.goto(URL);
-  
+
   await page.click(USERNAME_SELECTOR);
   await page.keyboard.type(CREDS.username);
-  
+
   await page.click(PASSWORD_SELECTOR);
   await page.keyboard.type(CREDS.password);
-  
+
   await page.click(BUTTON_SELECTOR);
-  
+
   await page.waitForNavigation();
   await page.goto(GW_URL);
   await page.waitForNavigation();
